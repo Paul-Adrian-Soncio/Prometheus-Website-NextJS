@@ -4,7 +4,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'display': ['Techovier Bold', 'sans-serif'],
+        'visby': ['Visby CF', 'sans-serif'],
+        'demi-bold': ['Visby CF Demi-Bold', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

@@ -1,0 +1,107 @@
+/* ./index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Techovier Bold';
+    /* src: url('fonts/Techovier-Bold.woff2') format('woff2'); */
+    src: url('https://hungry-saha-53281f.netlify.app/fonts/Techovier-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'Visby CF';
+    src: url('https://hungry-saha-53281f.netlify.app/fonts/VisbyCF-Regular.otf') format('opentype');
+    /* src: url('fonts/VisbyCF-Regular.otf') format('opentype'); */
+    font-weight: 300;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'Visby CF Demi-Bold';
+    /* src: url('fonts/VisbyCF-DemiBold.otf') format('opentype'); */
+    src: url('https://hungry-saha-53281f.netlify.app/fonts/VisbyCF-DemiBold.otf') format('opentype');
+    font-weight: 400;
+    font-display: swap;
+
+}
+
+@layer components {
+    
+    .grid-service {
+        @apply rounded-sm transition duration-500 hover:border-white min-w-0 flex-shrink w-1/3 sm:w-1/5 m-5;
+    }
+    .image-service {
+        @apply max-h-20;
+    }
+    .nav-items{
+        @apply p-2 lg:px-3 xl:px-4 md:mx-2 text-white md:text-sm lg:text-base font-visby rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300;
+    }
+    .prometheus-text{
+        @apply text-prometheus-gold text-sm sm:text-base md:text-2xl 2xl:text-4xl font-display text-center;
+    } 
+    .logo-container{
+        @apply m-auto px-4 py-2 w-1/2 lg:w-1/5 md:w-1/3;
+    }
+    .team-items{
+       @apply p-4 w-1/2 lg:w-1/5 md:w-1/2 transition duration-500 text-white hover:text-prometheus-gold;
+    }
+    .team-img{
+        @apply flex-shrink-0 rounded-lg w-full h-auto object-cover object-center transition duration-500 border-gray-300 border-opacity-0 hover:border-opacity-100 hover:border-prometheus-gold;
+    }
+    .team-description{
+        @apply absolute w-2full p-4 top-0 text-prometheus-gold bg-black bg-cover border-prometheus-gold text-sm 2xl:text-xl font-visby text-center md:text-left;
+    }
+    .pb-full {
+        padding-bottom: 100%;
+    }
+    .top-12p{
+        top: 12%;
+    }
+    .w-2full {
+        width: 200%;
+    }
+    .w-80p{
+        width: 80%;
+    }
+    .w-60p{
+        width: 60%;
+    }
+    .mh-500px {
+        max-height: 500px;
+    }
+    .min-w-50px{
+        min-width: 50px;
+    }
+    .pt-5625pc{
+        padding-top: 56.25%;
+    }
+    .pb-5625pc{
+        padding-bottom: 56.25%;
+    }
+    .pt-7291pc{
+        padding-top: 72.91%;
+    }
+
+    .w-200px{
+        width: 200px;
+    }
+    
+    .w-250px{
+        width: 250px;
+    }
+    .-z-1 {
+        z-index: -1;
+    }
+    /* rocks */
+    .top-3470px{
+        top: -3470px;
+    }
+    .h-70px{
+        height: 70px;
+    }
+}
