@@ -6,6 +6,18 @@ import Logo from "../public/photos/PrometheusLogo.webp";
 function HomePage() {
   return(
     <header class="text-gray-100 body-font bg-gradient-to-b from-black w-full max-sm:z-10 relative">
+     <div className="bg-black">
+      <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between flex-wrap">
+          <div className="w-0 flex-1 flex text-center justify-center items-center">
+            <p className="ml-3 font-medium text-prometheus-gold">
+              Prometheus is CDM and Google Analytics Qualification certified!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+       <nav
        <nav
           animate={{ scale: [0.8, 1] }}
           transition={{ ease: [0.4, 0.0, 0.2, 1], duration: 0.4 }}
