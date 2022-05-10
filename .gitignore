@@ -41,3 +41,4 @@ jspm_packages
 .next/
 .next/static/webpack/webpack.b3e65465ad312382.hot-update.js
 .next/static/webpack/webpack.c8ad4ad23144f8f2.hot-update.js
+.next/cache/webpack/client-development/3.pack
