@@ -39,3 +39,5 @@ jspm_packages
 
 # Next build dir
 .next/
+.next/static/webpack/webpack.b3e65465ad312382.hot-update.js
+.next/static/webpack/webpack.c8ad4ad23144f8f2.hot-update.js
