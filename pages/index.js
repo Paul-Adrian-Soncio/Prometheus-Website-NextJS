@@ -201,6 +201,7 @@ function HomePage() {
                 allowfullscreen
               ></iframe>
             </div>
+
             </div>
             </section>
             <section class="mt-10 mb-20">
@@ -920,9 +921,9 @@ function HomePage() {
 
       </div>
 
-            <div class="placeholder relative z-10 h-70px sm:h-100px"></div>
+      <div class="placeholder relative z-10 h-70px sm:h-100px"></div>
 
-            <footer class="fixed bottom-0 w-full z-20">
+      <footer class="fixed bottom-0 w-full z-20">
       <div
         class="relative content-center items-center sm:flex justify-between flex-row-reverse bg-cover h-70px sm:h-100px bg-bottom overflow-hidden"
    
@@ -933,7 +934,7 @@ function HomePage() {
         alt="Prometheus Footer Logo"
         src={prometheusLogo}
         width={250}
-        height={100}>
+        height={70}>
         </Image>
         <div class="text-center sm:text-left sm:text-sm text-xs md:text-base 2xl:text-xl font-visby text-white sm:ml-10">
           <p>Copyright © 2022 Prometheus, Inc. All rights reserved</p>
