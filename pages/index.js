@@ -87,47 +87,41 @@ import prometheusLogowebp from "../public/photos/PrometheusLogo.webp";
 function HomePage() {
   return(
     <header class="text-gray-100 body-font bg-gradient-to-b from-black w-full max-sm:z-10 relative">
-      <motion.nav
-          animate={{ scale: [0.8, 1] }}
-          transition={{ ease: [0.4, 0.0, 0.2, 1], duration: 0.4 }}
-          class="py-2 md:py-4"
-        >
-      <div className="bg-black">
-      <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between flex-wrap">
-          <div className="w-0 flex-1 flex text-center justify-center items-center">
-            <p className="ml-3 font-medium text-prometheus-gold">
-              Prometheus is CDM and Google Analytics Qualification certified!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-       <nav
+     
+        <div className="bg-black">
+              <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+                <div className="flex items-center justify-between flex-wrap">
+                  <div className="w-0 flex-1 flex text-center justify-center items-center">
+                    <p className="ml-3 font-medium text-prometheus-gold">
+                      Prometheus is CDM and Google Analytics Qualification certified!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
        
+       
+            <motion.nav
           animate={{ scale: [0.8, 1] }}
           transition={{ ease: [0.4, 0.0, 0.2, 1], duration: 0.4 }}
           class="py-2 md:py-4"
         >
-          
           <div class="container px-4 mx-auto md:flex md:items-center">
             <div class="flex justify-between items-center">
               <a href="#" class="font-bold text-xl text-prometheus-gold">
               <Image
                 src={Logo}
-                alt="Picture of logo"
-                width={250}
-                height={100}
+                alt="Prometheus Logo"
+                width={200}
+                height={70}
                 />
               </a>
-
               <button
-                class="border border-solid border-white px-3 py-1 rounded text-white opacity-50 hover:opacity-75 md:hidden"
+                class="border border-solid border-white px-3 py-1 rounded text-white opacity-50 hover:opacity-75 md:hidden"           
               >
-
               <b>☰</b>
               </button>
-
             </div>
 
             <div
@@ -158,7 +152,7 @@ function HomePage() {
               <a href="#advisors" class="nav-items" >
                 ADVISORS
               </a>
-              <a href="#advisors" class="nav-items" >
+              <a href="#" class="nav-items" >
                 BLOG
               </a>
               <a
@@ -166,13 +160,11 @@ function HomePage() {
                 class="p-2 lg:px-4 md:mx-2 md:text-sm lg:text-base text-prometheus-gold text-center border border-solid border-prometheus-gold rounded hover:bg-prometheus-gold hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1"
               >
                 CONTACT
-                
               </a>
-              
-    
-            
-            </div>
-            </div>
+          </div>
+        </div>
+      </motion.nav>
+      
             <section>
             <motion.nav
             animate={{ scale: [0.8, 1] }}
@@ -486,13 +478,16 @@ function HomePage() {
                   // variants={teamMotion}
                 >
               <Image
-              src={jonaswebp} type="image/webp"
+              src={jonaswebp} 
+              type="image/webp"
+              class="team-img"
+              alt="Jonas Tavarro"
               >    
-                  </Image>
-                  <motion.div
-                    // variants={teamDescMotion}
-                    class="team-description left-full"
-                  >
+              </Image>
+              <motion.div
+                // variants={teamDescMotion}
+                class="team-description left-full"
+              >
               {/* <p> 
                       As the Post-Production Director, Jonas works with
                       computer-generated imagery (CGI) to make otherwise
@@ -507,7 +502,7 @@ function HomePage() {
                       as well.
                     </p> 
                     */}
-            </motion.div>
+              </motion.div>
             </motion.div>
             <p class=" text-xl 2xl:text-4xl  font-visby font-bold text-left mt-5">
                   JONAS TAVARRO
@@ -571,7 +566,8 @@ function HomePage() {
                   // variants={teamMotion}
                 >
                   <Image
-                  srcset={lcidwebp} type="image/webp"
+                  srcset={lcidwebp} 
+                  type="image/webp"
                   class="team-img"
                   alt="Lcid Fernandez" 
                   src={lcid}> 
@@ -615,7 +611,8 @@ function HomePage() {
                   // variants={teamMotion}
                 >
                   <Image
-                  srcset={ginowebp} type="image/webp"
+                  srcset={ginowebp} 
+                  type="image/webp"
                   alt="Gino Fanega" 
                   src={gino}
                   class="team-img" >
@@ -657,7 +654,8 @@ function HomePage() {
                   // variants={teamMotion}
                 >
                   <Image
-                  srcset={reywebp} type="image/webp"
+                  srcset={reywebp} 
+                  type="image/webp"
                   class="team-img"
                   alt="Rey Palmares"
                   src={rey}>
@@ -678,12 +676,12 @@ function HomePage() {
                     </p>*/}
                   </motion.div>
                 </motion.div>
-                {/* <p class=" text-xl 2xl:text-4xl  font-visby font-bold mt-5"> 
+                <p class=" text-xl 2xl:text-4xl  font-visby font-bold mt-5"> 
                   REY PALMARES
                 </p>
                 <p class=" text-xl 2xl:text-3xl  font-visby text-left mt-5">
                   Senior Copywriter
-                </p>*/}
+                </p>
               </motion.div>
             </motion.div>
             </div>
@@ -917,7 +915,7 @@ function HomePage() {
                 </div>
               </div>
             </form>
-            </div>
+          </div>
         </section>
 
       </div>
@@ -945,8 +943,6 @@ function HomePage() {
     </footer>
        
             
-    </nav>
-    </motion.nav>
     
     </header>
   );
