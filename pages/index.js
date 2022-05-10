@@ -1,9 +1,10 @@
 import './_app.js';
 import Image from 'next/image'
-import Logo from "../public/photos/PrometheusLogo.webp";
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import ReactDOM from "react-dom";
+
+import Logo from "../public/photos/PrometheusLogo.webp";
 import iconST from "../public/photos/icons/strategyservicesicon.png";
 import iconSTwebp from "../public/photos/icons/strategyservicesicon.webp";
 import iconBS from "../public/photos/icons/brandingservicesicon.png";
@@ -136,9 +137,8 @@ function HomePage() {
               }
             >
 
-<a
+              <a
                 href="#"
-               
                 class="p-2 lg:px-4 md:text-sm lg:text-base md:mx-2 font-visby text-white rounded bg-prometheus-gold"
               >
                 HOME
@@ -158,9 +158,11 @@ function HomePage() {
               <a href="#advisors" class="nav-items" >
                 ADVISORS
               </a>
+              <a href="#advisors" class="nav-items" >
+                BLOG
+              </a>
               <a
                 href="#contact"
-              
                 class="p-2 lg:px-4 md:mx-2 md:text-sm lg:text-base text-prometheus-gold text-center border border-solid border-prometheus-gold rounded hover:bg-prometheus-gold hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1"
               >
                 CONTACT
@@ -455,6 +457,7 @@ function HomePage() {
             </div>
             </div>
             </section>
+
             <div
         class="relative bg-cover bg-bottom bg-black"
        
@@ -475,14 +478,8 @@ function HomePage() {
               MEET OUR STORYTELLERS
             </h2>
             <motion.div class="z-10 flex flex-wrap flex-shrink justify-center md:w-10/12 ">
-            <motion.div class="team-items z-50">
-            <motion.div
-                  class="relative"
-                  initial="rest"
-                  whileHover="hover"
-                  // variants={teamMotion}
-                >
-                  <motion.div
+              <motion.div class="team-items z-50">
+                <motion.div
                   class="relative"
                   initial="rest"
                   whileHover="hover"
@@ -522,6 +519,7 @@ function HomePage() {
                   Post-Production Director
                 </p>
             </motion.div>
+            
             <div class="team-items z-40">
             <motion.div
                   class="relative"
@@ -576,9 +574,9 @@ function HomePage() {
                   srcset={lcidwebp} type="image/webp"
                   class="team-img"
                   alt="Lcid Fernandez" 
-                  src={lcid}>
-                    
+                  src={lcid}> 
                   </Image>
+
                   <motion.div
                     // variants={teamDescMotion}
                     class="team-description left-full"
@@ -688,7 +686,6 @@ function HomePage() {
                 </p>*/}
               </motion.div>
             </motion.div>
-            </motion.div>
             </div>
            </section>
            <Image
@@ -743,14 +740,14 @@ function HomePage() {
                     <p class="">
                       Coupled with his time as a journalist, he knows the
                       intricacies of marketing by first-hand experience.
-                    </p>
+                    </p> */}
                   </motion.div>
-                  <p class="text-white text-xl 2xl:text-4xl font-visby text-left max-sm:mb-5">
+                  {/* <p class="text-white text-xl 2xl:text-4xl font-visby text-left max-sm:mb-5">
                     Lemuel Fernandez
-                  </p>*/}
+                  </p> */}
                 </motion.div>
               </motion.div>
-              </motion.div>
+          
               <motion.div>
                 <motion.div
                   class="relative"
@@ -783,13 +780,12 @@ function HomePage() {
                     <p class="">
                       As the go-to coach for marketing competitions, her teams
                       have won several national awards.
-                    </p>
+                    </p> */}
                   </motion.div>
-                  <p class="text-white text-xl xl:text-2xl 2xl:text-4xl font-visby text-right">
+                  {/* <p class="text-white text-xl xl:text-2xl 2xl:text-4xl font-visby text-right">
                     Tessa Albaña
-                  </p>*/}
+                  </p> */}
                 </motion.div>
-              </motion.div>
               </motion.div>
             </div>
             <Image
@@ -802,6 +798,8 @@ function HomePage() {
             
           </div>
         </section>
+
+        
         <section id="contact">
           <div class="max-w-screen-sm mx-auto p-5">
             <div class="text-center mb-16">
@@ -811,7 +809,6 @@ function HomePage() {
               <h2 class="z-10 text-3xl sm:text-4xl 2xl:text-6xl leading-normal font-display tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-prometheus-gray text-center">
                 We're always ready for new stories
               </h2>
-            </div>
             </div>
             <form name="prometheuscontact" method="POST" netlify>
             <input type="hidden" name="form-name" value="prometheuscontact" />
@@ -918,9 +915,13 @@ function HomePage() {
                     Get a Quote
                   </button>
                 </div>
-                </div>
+              </div>
             </form>
-            </section>
+            </div>
+        </section>
+
+      </div>
+
             <div class="placeholder relative z-10 h-70px sm:h-100px"></div>
 
             <footer class="fixed bottom-0 w-full z-20">
@@ -942,7 +943,7 @@ function HomePage() {
         </div>
       </div>
     </footer>
-       </div>
+       
             
     </nav>
     </motion.nav>
